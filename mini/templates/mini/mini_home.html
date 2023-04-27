@@ -1,0 +1,22 @@
+{% extends 'main/feed.html'%}
+{% load static %}
+
+{% block content %}
+    <div class="div">
+        <h1>{{ title }}</h1>
+        <p>
+            hello world
+        </p>
+        <button class="button">here</button>
+    </div>
+
+    {% if news %}
+        {% for el in news %}
+            {{el.title}}
+            {{el.anons}}
+        {% endfor %}
+    {% else %}
+        <p>you dont have any </p>
+    {% endif %}
+    
+{% endblock %}

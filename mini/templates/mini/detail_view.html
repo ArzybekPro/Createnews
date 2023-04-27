@@ -1,0 +1,10 @@
+{% extends 'main/feed.html'%}
+{% load static %}
+
+{% block content %}
+    <div class="div2">
+        {{article.date}}
+        {{ article.title }}
+        {{ article.full_text }}
+    </div>
+{% endblock %}
